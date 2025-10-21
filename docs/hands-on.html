@@ -9,6 +9,8 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-a37c72dd2dbac68997fcdc15a3622e78.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.24">
 
+  <meta name="author" content="최규빈">
+  <meta name="dcterms.date" content="2025-10-22">
   <title>hands-on</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -125,14 +127,1115 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">hands-on</h1>
 
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+최규빈 
+</div>
+        <p class="quarto-title-affiliation">
+            전북대학교 통계학과
+          </p>
+    </div>
+</div>
+
+  <p class="date">2025-10-22</p>
+</section>
 <section class="slide level2">
 
-<div id="2e0a6d85" class="cell" data-execution_count="2">
+<h3 id="실습주제1-코딩테스트">실습주제1 – 코딩테스트</h3>
+<p><code>-</code> 과거: 개념들을 배우고, 활용을 잘하면 코딩을 잘하는 것이다.</p>
+<ul>
+<li>제 생각: 개념을 활용하여 코딩을 잘하는건 많은 연습과 센스가 필요했음.</li>
+</ul>
+<p><code>개념1</code> – 숫자의 저장 및 계산</p>
+<div id="cb88c62a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<pre><code>11</code></pre>
+<pre><code>1</code></pre>
 </div>
 </div>
+<div id="af26c3ff" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<pre><code>2</code></pre>
+</div>
+</div>
+<div id="5ce15798" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<pre><code>3</code></pre>
+</div>
+</div>
+<p><code>개념2</code> – 문자의 저장 및 계산</p>
+<div id="9d86a576" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<pre><code>'이재명대통령'</code></pre>
+</div>
+</div>
+<div id="40c998f6" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<pre><code>'이재명이재명'</code></pre>
+</div>
+</div>
+<div id="2c0e891b" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<pre><code>'대통령대통령'</code></pre>
+</div>
+</div>
+<div id="5009ac18" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<pre><code>'이재명대통령이재명대통령'</code></pre>
+</div>
+</div>
+<p><code>개념3</code> – 숫자의 문자화, 문자의 숫자화 (형태변환 )</p>
+<div id="5f57801f" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<pre><code>2025</code></pre>
+</div>
+</div>
+<div id="d63cee40" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<pre><code>4050</code></pre>
+</div>
+</div>
+<div id="8d294f41" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<pre><code>'2025'</code></pre>
+</div>
+</div>
+<div id="00bf491b" class="cell" data-execution_count="13">
+<div class="cell-output cell-output-display">
+<pre><code>'20252025'</code></pre>
+</div>
+</div>
+<p><code>개념4</code> – replace (저장된 타입이 문자일 경우 쓸 수 있는 특별한 기능)</p>
+<div id="c9ffbd98" class="cell" data-execution_count="14">
+<div class="cell-output cell-output-display">
+<pre><code>'abc'</code></pre>
+</div>
+</div>
+<div id="63736fa1" class="cell" data-execution_count="15">
+<div class="cell-output cell-output-display">
+<pre><code>'aBc'</code></pre>
+</div>
+</div>
+<p><code>개념5</code> – 리스트 = “숫자, 문자를 여러개 남을 수 있는 그릇”</p>
+<div id="737c2b1d" class="cell" data-execution_count="16">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2, 'a', 3]</code></pre>
+</div>
+</div>
+<div id="453e84aa" class="cell" data-execution_count="17">
+<div class="cell-output cell-output-display">
+<pre><code>2</code></pre>
+</div>
+</div>
+<div id="557dc1c8" class="cell" data-execution_count="18">
+<div class="cell-output cell-output-display">
+<pre><code>4</code></pre>
+</div>
+</div>
+<div id="8e2340af" class="cell" data-execution_count="19">
+<div class="cell-output cell-output-display">
+<pre><code>'aa'</code></pre>
+</div>
+</div>
+<div id="5ff03595" class="cell" data-execution_count="20">
+<div class="cell-output cell-output-display">
+<pre><code>6</code></pre>
+</div>
+</div>
+<p><code>개념6</code> – 리스트의 원소 추가</p>
+<p>(예시1)</p>
+<div id="6ae8d82f" class="cell" data-execution_count="21">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2, 'a', 3]</code></pre>
+</div>
+</div>
+<div id="b942dcd0" class="cell" data-execution_count="23">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2, 'a', 3, 'b']</code></pre>
+</div>
+</div>
+<p>(예시2)</p>
+<div id="82386cbe" class="cell" data-execution_count="24">
+<div class="cell-output cell-output-display">
+<pre><code>[]</code></pre>
+</div>
+</div>
+<div id="eb022719" class="cell" data-execution_count="25">
+<div class="cell-output cell-output-display">
+<pre><code>[1]</code></pre>
+</div>
+</div>
+<div id="e0373309" class="cell" data-execution_count="26">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2]</code></pre>
+</div>
+</div>
+<p>(예시3)</p>
+<div id="af09449b" class="cell" data-execution_count="27">
+<div class="cell-output cell-output-display">
+<pre><code>[]</code></pre>
+</div>
+</div>
+<p>아래의 코드를 3번실행해보자.</p>
+<p>x에는 뭐가 있을까?</p>
+<p><code>개념7</code> – for문 (리스트와 같은 iterable객체의 원소를 반복하여 호출하는 테크닉)</p>
+<p>(예시1)</p>
+<div id="af3096dd" class="cell" data-execution_count="31">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2, 'a', 3]</code></pre>
+</div>
+</div>
+<p>(예시2)</p>
+<div id="7adc3021" class="cell" data-execution_count="34">
+<div class="cell-output cell-output-display">
+<pre><code>[2, 4, 'aa', 6]</code></pre>
+</div>
+</div>
+<p><code>문제1</code> – yyyy/mm/dd 타입을 yyyy-mm-dd 타입으로 변환하기</p>
+<p>아래와 같은 리스트가 있다.</p>
+<div id="e7f948d2" class="cell" data-execution_count="35">
+<div class="cell-output cell-output-display">
+<pre><code>['2022/09/21',
+ '2022/10/30',
+ '2022/12/25',
+ '2023/01/01',
+ '2023/01/31',
+ '2023/03/20']</code></pre>
+</div>
+</div>
+<p>날짜를 아래와 같은 형식으로 바꾸는 코드를 제시하라.</p>
+<div id="35b5015d" class="cell" data-execution_count="36">
+<div class="cell-output cell-output-display">
+<pre><code>['2022-09-21',
+ '2022-10-30',
+ '2022-12-25',
+ '2023-01-01',
+ '2023-01-31',
+ '2023-03-20']</code></pre>
+</div>
+</div>
+<p>(풀이) – 해보세요</p>
+<p><code>개념8</code> – 문자열들로 이루어진 리스트의 원소를 이어주는 테크닉 (join)</p>
+<div id="6e1ddcb1" class="cell" data-execution_count="37">
+<div class="cell-output cell-output-display">
+<pre><code>['2022', '01', '31']</code></pre>
+</div>
+</div>
+<div id="9b009918" class="cell" data-execution_count="38">
+<div class="cell-output cell-output-display">
+<pre><code>'2022-01-31'</code></pre>
+</div>
+</div>
+<div id="195509d5" class="cell" data-execution_count="39">
+<div class="cell-output cell-output-display">
+<pre><code>'2022-01-31'</code></pre>
+</div>
+</div>
+<p><code>개념9</code> – 문자열을 특정기호를 기준으로 분리하여 리스트로 만들기</p>
+<p>(예시1)</p>
+<div id="28cc04ca" class="cell" data-execution_count="40">
+<div class="cell-output cell-output-display">
+<pre><code>'2022-01-31'</code></pre>
+</div>
+</div>
+<div id="3c2c63d9" class="cell" data-execution_count="41">
+<div class="cell-output cell-output-display">
+<pre><code>['2022', '01', '31']</code></pre>
+</div>
+</div>
+<p>(예시2)</p>
+<div id="0fc17fc0" class="cell" data-execution_count="42">
+<div class="cell-output cell-output-display">
+<pre><code>'2022-01-31'</code></pre>
+</div>
+</div>
+<div id="41ec2a07" class="cell" data-execution_count="43">
+<div class="cell-output cell-output-display">
+<pre><code>['2022', '01', '31']</code></pre>
+</div>
+</div>
+<div id="48aab68e" class="cell" data-execution_count="44">
+<div class="cell-output cell-output-display">
+<pre><code>'2022-01-31'</code></pre>
+</div>
+</div>
+<p><code>문제2</code> – 기차만들기</p>
+<p>아래의 특수문자를 이용하여</p>
+<div id="6272960c" class="cell" data-execution_count="45">
+<div class="cell-output cell-output-display">
+<pre><code>'■'</code></pre>
+</div>
+</div>
+<p>다음과 같은 기차를 만들어보자.</p>
+<div id="d58eed62" class="cell" data-execution_count="46">
+<div class="cell-output cell-output-display">
+<pre><code>'■-■-■-■-■---■-■-■-■-■---■-■-■-■-■'</code></pre>
+</div>
+</div>
+<p>(풀이)</p>
+<p><code>개념10</code> – 리스트안의 리스트 (원소로 리스트를 가지는 리스트)</p>
+<div id="205d11da" class="cell" data-execution_count="48">
+<div class="cell-output cell-output-display">
+<pre><code>[1, 2]</code></pre>
+</div>
+</div>
+<div id="a945598f" class="cell" data-execution_count="49">
+<div class="cell-output cell-output-display">
+<pre><code>1</code></pre>
+</div>
+</div>
+<div id="1a1993fd" class="cell" data-execution_count="50">
+<div class="cell-output cell-output-display">
+<pre><code>2</code></pre>
+</div>
+</div>
+<div id="6c493bdf" class="cell" data-execution_count="51">
+<div class="cell-output cell-output-display">
+<pre><code>[3, 4, 5]</code></pre>
+</div>
+</div>
+<div id="2278b9f2" class="cell" data-execution_count="52">
+<div class="cell-output cell-output-display">
+<pre><code>3</code></pre>
+</div>
+</div>
+<div id="fc6ffbc1" class="cell" data-execution_count="53">
+<div class="cell-output cell-output-display">
+<pre><code>4</code></pre>
+</div>
+</div>
+<div id="9a0abb3e" class="cell" data-execution_count="54">
+<div class="cell-output cell-output-display">
+<pre><code>5</code></pre>
+</div>
+</div>
+<p><code>개념11</code> – 함수</p>
+<div id="dde0b7a9" class="cell" data-execution_count="56">
+<div class="cell-output cell-output-display">
+<pre><code>3</code></pre>
+</div>
+</div>
+<div id="b92d7ed0" class="cell" data-execution_count="57">
+<div class="cell-output cell-output-display">
+<pre><code>'aaa'</code></pre>
+</div>
+</div>
+<p><code>문제3</code> – 2021 카카오 채용연계형 인턴쉽 기출문제</p>
+<blockquote>
+<p>출처: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/81301?language=ruby" class="uri">https://school.programmers.co.kr/learn/courses/30/lessons/81301?language=ruby</a></p>
+</blockquote>
+
+<img data-src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/d31cb063-4025-4412-8cbc-6ac6909cf93e/img1.png" class="r-stretch"><p>네오와 프로도가 숫자놀이를 하고 있습니다. 네오가 프로도에게 숫자를 건넬때 일부 자릿수를 영단어로 바꾼 카드를 건네주면 프로도는 원래 숫자를 찾는게임입니다. 다음은 숫자의 일부 자릿수를 영단어로 바꾸는 예시입니다.</p>
+<pre><code>1478 --&gt; "one4seveneight"
+234567 --&gt; "23four5six7"
+10203 --&gt; "1zerotwozero3"</code></pre>
+<p>이렇게 숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열 s가 매개변수로 주어집니다. s가 의미하는 원래 숫자를 return 하도록 <code>solution</code> 함수를 완성해주세요.</p>
+<p>참고로 각 숫자에 대응되는 영단어는 다음 표와 같습니다.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">숫자</th>
+<th style="text-align: center;">영단어</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">zero</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">one</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">two</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">three</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">four</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">five</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">six</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">seven</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">eight</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">nine</td>
+</tr>
+</tbody>
+</table>
+<p><code>-</code> 제한사항</p>
+<ul>
+<li>1 ≤ s의 길이 ≤ 50</li>
+<li>s가 “zero” 또는 “0”으로 시작하는 경우는 주어지지 않습니다.</li>
+<li>return 값이 1 이상 2,000,000,000 이하의 정수가 되는 올바른 입력만 s로 주어집니다.</li>
+</ul>
+<p><code>-</code> 입출력 예</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">s</th>
+<th style="text-align: center;">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">“one4seveneight”</td>
+<td style="text-align: center;">1478</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">“23four5six7”</td>
+<td style="text-align: center;">234567</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">“2three45sixseven”</td>
+<td style="text-align: center;">234567</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">“123”</td>
+<td style="text-align: center;">123</td>
+</tr>
+</tbody>
+</table>
+<p><code>-</code> 입출력 예 설명</p>
+<ul>
+<li>입출력 예 #1 – 문제 예시와 같습니다.</li>
+<li>입출력 예 #2 – 문제 예시와 같습니다.</li>
+<li>입출력 예 #3 – “three”는 3, “six”는 6, “seven”은 7에 대응되기 때문에 정답은 입출력 예 #2와 같은 234567이 됩니다. 입출력 예 #2와 #3과 같이 같은 정답을 가리키는 문자열이 여러 가지가 나올 수 있습니다.</li>
+<li>입출력 예 #4 – s에는 영단어로 바뀐 부분이 없습니다.</li>
+</ul>
+<p>(풀이)</p>
+<p><strong>hint</strong> 아래의 리스트를 활용해보세요</p>
+<div id="203ba723" class="cell" data-execution_count="58">
+<div class="cell-output cell-output-display">
+<pre><code>[['zero', '0'],
+ ['one', '1'],
+ ['two', '2'],
+ ['three', '3'],
+ ['four', '4'],
+ ['five', '5'],
+ ['six', '6'],
+ ['seven', '7'],
+ ['eight', '8'],
+ ['nine', '9']]</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="실습주제2-코딩테스트의-위기">실습주제2 – 코딩테스트의 위기</h3>
+<p><code>실습1</code> – ChatGPT를 켜고 “2021 카카오 채용연계형 인턴쉽 기출문제”를 풀어달라고 부탁해보자.</p>
+<p><code>생각해볼점1</code> – 아래의 유튜브를 시청하고 (5:12 - 6:28 까지만 보면 됩니당) 본인의 생각을 정리해보자.</p>
+<p><a href="https://www.youtube.com/watch?v=VpOrYvq7ruk&amp;t=434s" class="uri">https://www.youtube.com/watch?v=VpOrYvq7ruk&amp;t=434s</a></p>
+<ul>
+<li>코딩테스트가 사라질까? (수능도 사라진다고 하는판에..)</li>
+<li>그럼 향후에는 어떠한 사람이 인재일까? 프로그래밍을 공부하는건 혹시 주산을 공부하는 것과 같은 일인가?</li>
+</ul>
+<p><code>생각해볼점2</code> – 반발</p>
+<ul>
+<li><a href="https://brunch.co.kr/@23why/206" class="uri">https://brunch.co.kr/@23why/206</a> – 공부는 헛되지 않음, 프롬프트 작성 + 결과를 검토할 능력을 얻음</li>
+<li><a href="https://asset200.tistory.com/4" class="uri">https://asset200.tistory.com/4</a> – 오래된 정보(11), 환각(7)</li>
+</ul>
+<p><code>실습2</code> – 세종대왕의 맥북프로 던짐 사건을 재현해보자.</p>
+<ul>
+<li>맥북프로 던짐 사건 – <a href="https://namu.wiki/w/%EC%84%B8%EC%A2%85%EB%8C%80%EC%99%95%20%EB%A7%A5%EB%B6%81%ED%94%84%EB%A1%9C%20%EB%8D%98%EC%A7%90%20%EC%82%AC%EA%B1%B4?uuid=8f18b777-9009-4e52-a170-755574a38a1f">나무위키</a></li>
+<li>기세등등 (인공지능 별것 아니잖아?) <a href="https://www.chosun.com/national/weekend/2023/03/04/HR457QM36JFTXDUVAMMNG23MHQ/" class="uri">https://www.chosun.com/national/weekend/2023/03/04/HR457QM36JFTXDUVAMMNG23MHQ/</a></li>
+</ul>
+<p><code>생각해볼점3</code> – GPT가 풀지 못하는 문제에 집중해야 할까?</p>
+<ul>
+<li>인간은 GPT가 여전히 해결하지 못하는 문제를 찾아야 할까?</li>
+<li>아니라면 GPT를 활용하는 방법을 알아야 할까?</li>
+</ul>
+<p><code>제 생각</code> – 활용해야 합니다.</p>
+<p>(옛날상식)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="hands-on_files/figure-revealjs/513e5281-1-image.png"></p>
+<figcaption>-</figcaption>
+</figure>
+</div>
+<p><em>인공지능시대의 유망직종과 쇠퇴직종 &lt;출처: 인공지능 기술 발전이 가져올 미래 사회 변화 (2015)&gt;</em></p>
+<p>(상식의무너짐)</p>
+<p><a href="http://www.aifnlife.co.kr/news/articleView.html?idxno=13100" class="uri">http://www.aifnlife.co.kr/news/articleView.html?idxno=13100</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://cdn.aifnlife.co.kr/news/photo/202209/13100_12469_3459.jpeg"></p>
+<figcaption>-</figcaption>
+</figure>
+</div>
+<p><code>복습</code> – AI시대에 LLM모형을 활용하는 올바른 프로그래머의 두 가지 선택</p>
+<ul>
+<li>왼쪽길: AI에만 너무 의존할 수 없다. 기본적인 코딩교육은 필요하다는 입장.</li>
+<li>오른쪽길: 순수하게 AI에만 의존해도 무방하다. (바이브코딩)</li>
+</ul>
+<blockquote>
+<p>왼쪽길과 오른쪽길의 공통점: 최근 LLM 기술의 동향을 파악하는 것이 매우 중요</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h3 id="실습주제3-perplexity를-무시할-수-없는-이유-rag">실습주제3 – Perplexity를 무시할 수 없는 이유 (RAG)</h3>
+<p><code>실습1</code> – Perplexity를 켜고 “세종대왕의 맥북프로 던짐 사건”에 대하여 물어보자.</p>
+<p><code>실습2</code> – Perplexity를 켜고 “최규빈 교수 연구실 전화번호 좀 알려줘” 를 질문하자, 동일한 질문을 ChatGPT에게 해보자.</p>
+<p><code>실습3</code> – Perplexity를 켜고 “최규빈 교수가 R수업을 한 적 있는지 물어보자” 를 질문하자, 동일한 질문을 ChatGPT에게 해보자.</p>
+<p><code>실습4</code> – 구글AI모드를 켜고 실습해보자.</p>
+<h3 id="실습주제4-cursor의-간접체험">실습주제4 – Cursor의 간접체험</h3>
+<p>아래의 코드가 있다.</p>
+<div id="c2f99441" class="cell" data-execution_count="59">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="hands-on_files/figure-revealjs/cell-60-output-1.png"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>그림의 제목을 “Figure: Line Plot” 이라고 붙이고 싶어서 아래의 코드를 실행했다.</p>
+<div id="246343bf" class="cell" data-execution_count="64">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+
+Cell <span class="ansi-green-fg">In[64], line 1</span>
+
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">plt</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">title</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">Figure: Line Plot</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/pyplot.py:3838</span>, in <span class="ansi-cyan-fg">plot</span><span class="ansi-blue-fg">(scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   3830</span> <span style="color:rgb(175,0,255)">@_copy_docstring_and_deprecators</span>(Axes<span style="color:rgb(98,98,98)">.</span>plot)
+
+<span class="ansi-green-fg ansi-bold">   3831</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">plot</span>(
+
+<span class="ansi-green-fg ansi-bold">   3832</span>     <span style="color:rgb(98,98,98)">*</span>args: <span style="color:rgb(0,135,0)">float</span> <span style="color:rgb(98,98,98)">|</span> ArrayLike <span style="color:rgb(98,98,98)">|</span> <span style="color:rgb(0,135,0)">str</span>,
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   3836</span>     <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs,
+
+<span class="ansi-green-fg ansi-bold">   3837</span> ) <span style="color:rgb(98,98,98)">-</span><span style="color:rgb(98,98,98)">&gt;</span> <span style="color:rgb(0,135,0)">list</span>[Line2D]:
+
+<span class="ansi-green-fg">-&gt; 3838</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">gca</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   3839</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3840</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scalex</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scalex</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3841</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scaley</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scaley</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3842</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">{</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">data</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">if</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">is</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">not</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">None</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">else</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">{</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3843</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3844</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1777</span>, in <span class="ansi-cyan-fg">Axes.plot</span><span class="ansi-blue-fg">(self, scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1534</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1535</span> <span style="font-style:italic;color:rgb(175,0,0)">Plot y versus x as lines and/or markers.</span>
+
+<span class="ansi-green-fg ansi-bold">   1536</span> 
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   1774</span> <span style="font-style:italic;color:rgb(175,0,0)">(``'green'``) or hex strings (``'#008000'``).</span>
+
+<span class="ansi-green-fg ansi-bold">   1775</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1776</span> kwargs <span style="color:rgb(98,98,98)">=</span> cbook<span style="color:rgb(98,98,98)">.</span>normalize_kwargs(kwargs, mlines<span style="color:rgb(98,98,98)">.</span>Line2D)
+
+<span class="ansi-green-fg">-&gt; 1777</span> lines <span style="color:rgb(98,98,98)">=</span> [<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_get_lines(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(98,98,98)">*</span>args, data<span style="color:rgb(98,98,98)">=</span>data, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs)]
+
+<span class="ansi-green-fg ansi-bold">   1778</span> <span style="font-weight:bold;color:rgb(0,135,0)">for</span> line <span style="font-weight:bold;color:rgb(175,0,255)">in</span> lines:
+
+<span class="ansi-green-fg ansi-bold">   1779</span>     <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>add_line(line)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:297</span>, in <span class="ansi-cyan-fg">_process_plot_var_args.__call__</span><span class="ansi-blue-fg">(self, axes, data, return_kwargs, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    295</span>     this <span style="color:rgb(98,98,98)">+</span><span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">0</span>],
+
+<span class="ansi-green-fg ansi-bold">    296</span>     args <span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">1</span>:]
+
+<span class="ansi-green-fg">--&gt; 297</span> <span style="font-weight:bold;color:rgb(0,135,0)">yield from</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_plot_args</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">    298</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">this</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    299</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">return_kwargs</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">return_kwargs</span>
+
+<span class="ansi-green-fg ansi-bold">    300</span> <span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:546</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._plot_args</span><span class="ansi-blue-fg">(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)</span>
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+<span class="ansi-green-fg ansi-bold">    545</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg">--&gt; 546</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">0</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">for</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">in</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">]</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:539</span>, in <span class="ansi-cyan-fg">&lt;genexpr&gt;</span><span class="ansi-blue-fg">(.0)</span>
+
+<span class="ansi-green-fg ansi-bold">    534</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg ansi-bold">    535</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(
+
+<span class="ansi-green-fg ansi-bold">    536</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">label must be scalar or have the same length as the input </span><span style="color:rgb(175,0,0)">"</span>
+
+<span class="ansi-green-fg ansi-bold">    537</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">data, but found </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span><span style="color:rgb(0,135,0)">len</span>(label)<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> for </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>n_datasets<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> datasets.</span><span style="color:rgb(175,0,0)">"</span>)
+
+<span class="ansi-green-fg">--&gt; 539</span> result <span style="color:rgb(98,98,98)">=</span> (<span class="ansi-yellow-bg">make_artist</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncx</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncy</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    540</span> <span class="ansi-yellow-bg">                      </span><span class="ansi-yellow-bg">{</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">label</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">label</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    541</span>           <span style="font-weight:bold;color:rgb(0,135,0)">for</span> j, label <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">enumerate</span>(labels))
+
+<span class="ansi-green-fg ansi-bold">    543</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> return_kwargs:
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:338</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._make_line</span><span class="ansi-blue-fg">(self, axes, x, y, kw, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    336</span> kw <span style="color:rgb(98,98,98)">=</span> {<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kw, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs}  <span style="font-style:italic;color:rgb(95,135,135)"># Don't modify the original kw.</span>
+
+<span class="ansi-green-fg ansi-bold">    337</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_setdefaults(<span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_getdefaults(kw), kw)
+
+<span class="ansi-green-fg">--&gt; 338</span> seg <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">mlines</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">Line2D</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    339</span> <span style="font-weight:bold;color:rgb(0,135,0)">return</span> seg, kw
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/lines.py:421</span>, in <span class="ansi-cyan-fg">Line2D.__init__</span><span class="ansi-blue-fg">(self, xdata, ydata, linewidth, linestyle, color, gapcolor, marker, markersize, markeredgewidth, markeredgecolor, markerfacecolor, markerfacecoloralt, fillstyle, antialiased, dash_capstyle, solid_capstyle, dash_joinstyle, solid_joinstyle, pickradius, drawstyle, markevery, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    417</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>set_markeredgewidth(markeredgewidth)
+
+<span class="ansi-green-fg ansi-bold">    419</span> <span style="font-style:italic;color:rgb(95,135,135)"># update kwargs before updating data to give the caller a</span>
+
+<span class="ansi-green-fg ansi-bold">    420</span> <span style="font-style:italic;color:rgb(95,135,135)"># chance to init axes (and hence unit support)</span>
+
+<span class="ansi-green-fg">--&gt; 421</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_internal_update</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    422</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>pickradius <span style="color:rgb(98,98,98)">=</span> pickradius
+
+<span class="ansi-green-fg ansi-bold">    423</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>ind_offset <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(98,98,98)">0</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1233</span>, in <span class="ansi-cyan-fg">Artist._internal_update</span><span class="ansi-blue-fg">(self, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1226</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">_internal_update</span>(<span style="color:rgb(0,135,0)">self</span>, kwargs):
+
+<span class="ansi-green-fg ansi-bold">   1227</span> <span style="color:rgb(188,188,188)">    </span><span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1228</span> <span style="font-style:italic;color:rgb(175,0,0)">    Update artist properties without prenormalizing them, but generating</span>
+
+<span class="ansi-green-fg ansi-bold">   1229</span> <span style="font-style:italic;color:rgb(175,0,0)">    errors as if calling `set`.</span>
+
+<span class="ansi-green-fg ansi-bold">   1230</span> 
+
+<span class="ansi-green-fg ansi-bold">   1231</span> <span style="font-style:italic;color:rgb(175,0,0)">    The lack of prenormalization is to maintain backcompatibility.</span>
+
+<span class="ansi-green-fg ansi-bold">   1232</span> <span style="font-style:italic;color:rgb(175,0,0)">    """</span>
+
+<span class="ansi-green-fg">-&gt; 1233</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_update_props</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   1234</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{cls.__name__}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">.set() got an unexpected keyword argument </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span>
+
+<span class="ansi-green-fg ansi-bold">   1235</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{prop_name!r}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1206</span>, in <span class="ansi-cyan-fg">Artist._update_props</span><span class="ansi-blue-fg">(self, props, errfmt)</span>
+
+<span class="ansi-green-fg ansi-bold">   1204</span>             func <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">getattr</span>(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">set_</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>k<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)">"</span>, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>)
+
+<span class="ansi-green-fg ansi-bold">   1205</span>             <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="color:rgb(0,135,0)">callable</span>(func):
+
+<span class="ansi-green-fg">-&gt; 1206</span>                 <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">AttributeError</span>(
+
+<span class="ansi-green-fg ansi-bold">   1207</span>                     errfmt<span style="color:rgb(98,98,98)">.</span>format(<span style="color:rgb(0,135,0)">cls</span><span style="color:rgb(98,98,98)">=</span><span style="color:rgb(0,135,0)">type</span>(<span style="color:rgb(0,135,0)">self</span>), prop_name<span style="color:rgb(98,98,98)">=</span>k),
+
+<span class="ansi-green-fg ansi-bold">   1208</span>                     name<span style="color:rgb(98,98,98)">=</span>k)
+
+<span class="ansi-green-fg ansi-bold">   1209</span>             ret<span style="color:rgb(98,98,98)">.</span>append(func(v))
+
+<span class="ansi-green-fg ansi-bold">   1210</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> ret:
+
+
+
+<span class="ansi-red-fg">AttributeError</span>: Line2D.set() got an unexpected keyword argument 'title'</pre>
+</div>
+</div>
+</div>
+<p>에러를 어떻게 하면 좋을까?</p>
+<p><code>실습1</code> – ChatGPT에게 물어서 대안을 물어보고 해결하기</p>
+<div id="5fc34165" class="cell" data-execution_count="65">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+
+Cell <span class="ansi-green-fg">In[65], line 1</span>
+
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">plt</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">title</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">Figure: Line Plot</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span> <span style="font-style:italic;color:rgb(95,135,135)"># 이 코드를 수정하라</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/pyplot.py:3838</span>, in <span class="ansi-cyan-fg">plot</span><span class="ansi-blue-fg">(scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   3830</span> <span style="color:rgb(175,0,255)">@_copy_docstring_and_deprecators</span>(Axes<span style="color:rgb(98,98,98)">.</span>plot)
+
+<span class="ansi-green-fg ansi-bold">   3831</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">plot</span>(
+
+<span class="ansi-green-fg ansi-bold">   3832</span>     <span style="color:rgb(98,98,98)">*</span>args: <span style="color:rgb(0,135,0)">float</span> <span style="color:rgb(98,98,98)">|</span> ArrayLike <span style="color:rgb(98,98,98)">|</span> <span style="color:rgb(0,135,0)">str</span>,
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   3836</span>     <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs,
+
+<span class="ansi-green-fg ansi-bold">   3837</span> ) <span style="color:rgb(98,98,98)">-</span><span style="color:rgb(98,98,98)">&gt;</span> <span style="color:rgb(0,135,0)">list</span>[Line2D]:
+
+<span class="ansi-green-fg">-&gt; 3838</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">gca</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   3839</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3840</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scalex</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scalex</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3841</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scaley</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scaley</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3842</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">{</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">data</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">if</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">is</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">not</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">None</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">else</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">{</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3843</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3844</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1777</span>, in <span class="ansi-cyan-fg">Axes.plot</span><span class="ansi-blue-fg">(self, scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1534</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1535</span> <span style="font-style:italic;color:rgb(175,0,0)">Plot y versus x as lines and/or markers.</span>
+
+<span class="ansi-green-fg ansi-bold">   1536</span> 
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   1774</span> <span style="font-style:italic;color:rgb(175,0,0)">(``'green'``) or hex strings (``'#008000'``).</span>
+
+<span class="ansi-green-fg ansi-bold">   1775</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1776</span> kwargs <span style="color:rgb(98,98,98)">=</span> cbook<span style="color:rgb(98,98,98)">.</span>normalize_kwargs(kwargs, mlines<span style="color:rgb(98,98,98)">.</span>Line2D)
+
+<span class="ansi-green-fg">-&gt; 1777</span> lines <span style="color:rgb(98,98,98)">=</span> [<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_get_lines(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(98,98,98)">*</span>args, data<span style="color:rgb(98,98,98)">=</span>data, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs)]
+
+<span class="ansi-green-fg ansi-bold">   1778</span> <span style="font-weight:bold;color:rgb(0,135,0)">for</span> line <span style="font-weight:bold;color:rgb(175,0,255)">in</span> lines:
+
+<span class="ansi-green-fg ansi-bold">   1779</span>     <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>add_line(line)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:297</span>, in <span class="ansi-cyan-fg">_process_plot_var_args.__call__</span><span class="ansi-blue-fg">(self, axes, data, return_kwargs, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    295</span>     this <span style="color:rgb(98,98,98)">+</span><span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">0</span>],
+
+<span class="ansi-green-fg ansi-bold">    296</span>     args <span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">1</span>:]
+
+<span class="ansi-green-fg">--&gt; 297</span> <span style="font-weight:bold;color:rgb(0,135,0)">yield from</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_plot_args</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">    298</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">this</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    299</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">return_kwargs</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">return_kwargs</span>
+
+<span class="ansi-green-fg ansi-bold">    300</span> <span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:546</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._plot_args</span><span class="ansi-blue-fg">(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)</span>
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+<span class="ansi-green-fg ansi-bold">    545</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg">--&gt; 546</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">0</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">for</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">in</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">]</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:539</span>, in <span class="ansi-cyan-fg">&lt;genexpr&gt;</span><span class="ansi-blue-fg">(.0)</span>
+
+<span class="ansi-green-fg ansi-bold">    534</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg ansi-bold">    535</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(
+
+<span class="ansi-green-fg ansi-bold">    536</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">label must be scalar or have the same length as the input </span><span style="color:rgb(175,0,0)">"</span>
+
+<span class="ansi-green-fg ansi-bold">    537</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">data, but found </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span><span style="color:rgb(0,135,0)">len</span>(label)<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> for </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>n_datasets<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> datasets.</span><span style="color:rgb(175,0,0)">"</span>)
+
+<span class="ansi-green-fg">--&gt; 539</span> result <span style="color:rgb(98,98,98)">=</span> (<span class="ansi-yellow-bg">make_artist</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncx</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncy</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    540</span> <span class="ansi-yellow-bg">                      </span><span class="ansi-yellow-bg">{</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">label</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">label</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    541</span>           <span style="font-weight:bold;color:rgb(0,135,0)">for</span> j, label <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">enumerate</span>(labels))
+
+<span class="ansi-green-fg ansi-bold">    543</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> return_kwargs:
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:338</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._make_line</span><span class="ansi-blue-fg">(self, axes, x, y, kw, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    336</span> kw <span style="color:rgb(98,98,98)">=</span> {<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kw, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs}  <span style="font-style:italic;color:rgb(95,135,135)"># Don't modify the original kw.</span>
+
+<span class="ansi-green-fg ansi-bold">    337</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_setdefaults(<span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_getdefaults(kw), kw)
+
+<span class="ansi-green-fg">--&gt; 338</span> seg <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">mlines</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">Line2D</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    339</span> <span style="font-weight:bold;color:rgb(0,135,0)">return</span> seg, kw
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/lines.py:421</span>, in <span class="ansi-cyan-fg">Line2D.__init__</span><span class="ansi-blue-fg">(self, xdata, ydata, linewidth, linestyle, color, gapcolor, marker, markersize, markeredgewidth, markeredgecolor, markerfacecolor, markerfacecoloralt, fillstyle, antialiased, dash_capstyle, solid_capstyle, dash_joinstyle, solid_joinstyle, pickradius, drawstyle, markevery, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    417</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>set_markeredgewidth(markeredgewidth)
+
+<span class="ansi-green-fg ansi-bold">    419</span> <span style="font-style:italic;color:rgb(95,135,135)"># update kwargs before updating data to give the caller a</span>
+
+<span class="ansi-green-fg ansi-bold">    420</span> <span style="font-style:italic;color:rgb(95,135,135)"># chance to init axes (and hence unit support)</span>
+
+<span class="ansi-green-fg">--&gt; 421</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_internal_update</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    422</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>pickradius <span style="color:rgb(98,98,98)">=</span> pickradius
+
+<span class="ansi-green-fg ansi-bold">    423</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>ind_offset <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(98,98,98)">0</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1233</span>, in <span class="ansi-cyan-fg">Artist._internal_update</span><span class="ansi-blue-fg">(self, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1226</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">_internal_update</span>(<span style="color:rgb(0,135,0)">self</span>, kwargs):
+
+<span class="ansi-green-fg ansi-bold">   1227</span> <span style="color:rgb(188,188,188)">    </span><span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1228</span> <span style="font-style:italic;color:rgb(175,0,0)">    Update artist properties without prenormalizing them, but generating</span>
+
+<span class="ansi-green-fg ansi-bold">   1229</span> <span style="font-style:italic;color:rgb(175,0,0)">    errors as if calling `set`.</span>
+
+<span class="ansi-green-fg ansi-bold">   1230</span> 
+
+<span class="ansi-green-fg ansi-bold">   1231</span> <span style="font-style:italic;color:rgb(175,0,0)">    The lack of prenormalization is to maintain backcompatibility.</span>
+
+<span class="ansi-green-fg ansi-bold">   1232</span> <span style="font-style:italic;color:rgb(175,0,0)">    """</span>
+
+<span class="ansi-green-fg">-&gt; 1233</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_update_props</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   1234</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{cls.__name__}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">.set() got an unexpected keyword argument </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span>
+
+<span class="ansi-green-fg ansi-bold">   1235</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{prop_name!r}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1206</span>, in <span class="ansi-cyan-fg">Artist._update_props</span><span class="ansi-blue-fg">(self, props, errfmt)</span>
+
+<span class="ansi-green-fg ansi-bold">   1204</span>             func <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">getattr</span>(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">set_</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>k<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)">"</span>, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>)
+
+<span class="ansi-green-fg ansi-bold">   1205</span>             <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="color:rgb(0,135,0)">callable</span>(func):
+
+<span class="ansi-green-fg">-&gt; 1206</span>                 <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">AttributeError</span>(
+
+<span class="ansi-green-fg ansi-bold">   1207</span>                     errfmt<span style="color:rgb(98,98,98)">.</span>format(<span style="color:rgb(0,135,0)">cls</span><span style="color:rgb(98,98,98)">=</span><span style="color:rgb(0,135,0)">type</span>(<span style="color:rgb(0,135,0)">self</span>), prop_name<span style="color:rgb(98,98,98)">=</span>k),
+
+<span class="ansi-green-fg ansi-bold">   1208</span>                     name<span style="color:rgb(98,98,98)">=</span>k)
+
+<span class="ansi-green-fg ansi-bold">   1209</span>             ret<span style="color:rgb(98,98,98)">.</span>append(func(v))
+
+<span class="ansi-green-fg ansi-bold">   1210</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> ret:
+
+
+
+<span class="ansi-red-fg">AttributeError</span>: Line2D.set() got an unexpected keyword argument 'title'</pre>
+</div>
+</div>
+</div>
+<p><code>실습2</code> – 코랩에서 <code>Explain error</code>를 활용하여 해결하기</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="hands-on_files/figure-revealjs/f0d7125c-1-image-2.png"></p>
+<figcaption>-</figcaption>
+</figure>
+</div>
+<div id="65e408e0" class="cell" data-execution_count="66">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+
+Cell <span class="ansi-green-fg">In[66], line 1</span>
+
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">plt</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">title</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">Figure: Line Plot</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span> <span style="font-style:italic;color:rgb(95,135,135)"># 이 코드를 수정하라</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/pyplot.py:3838</span>, in <span class="ansi-cyan-fg">plot</span><span class="ansi-blue-fg">(scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   3830</span> <span style="color:rgb(175,0,255)">@_copy_docstring_and_deprecators</span>(Axes<span style="color:rgb(98,98,98)">.</span>plot)
+
+<span class="ansi-green-fg ansi-bold">   3831</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">plot</span>(
+
+<span class="ansi-green-fg ansi-bold">   3832</span>     <span style="color:rgb(98,98,98)">*</span>args: <span style="color:rgb(0,135,0)">float</span> <span style="color:rgb(98,98,98)">|</span> ArrayLike <span style="color:rgb(98,98,98)">|</span> <span style="color:rgb(0,135,0)">str</span>,
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   3836</span>     <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs,
+
+<span class="ansi-green-fg ansi-bold">   3837</span> ) <span style="color:rgb(98,98,98)">-</span><span style="color:rgb(98,98,98)">&gt;</span> <span style="color:rgb(0,135,0)">list</span>[Line2D]:
+
+<span class="ansi-green-fg">-&gt; 3838</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">gca</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   3839</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3840</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scalex</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scalex</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3841</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">scaley</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">scaley</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3842</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">{</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">data</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">if</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">is</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">not</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">None</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">else</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">{</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3843</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">   3844</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1777</span>, in <span class="ansi-cyan-fg">Axes.plot</span><span class="ansi-blue-fg">(self, scalex, scaley, data, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1534</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1535</span> <span style="font-style:italic;color:rgb(175,0,0)">Plot y versus x as lines and/or markers.</span>
+
+<span class="ansi-green-fg ansi-bold">   1536</span> 
+
+<span class="ansi-green-fg">   (...)</span>
+
+<span class="ansi-green-fg ansi-bold">   1774</span> <span style="font-style:italic;color:rgb(175,0,0)">(``'green'``) or hex strings (``'#008000'``).</span>
+
+<span class="ansi-green-fg ansi-bold">   1775</span> <span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1776</span> kwargs <span style="color:rgb(98,98,98)">=</span> cbook<span style="color:rgb(98,98,98)">.</span>normalize_kwargs(kwargs, mlines<span style="color:rgb(98,98,98)">.</span>Line2D)
+
+<span class="ansi-green-fg">-&gt; 1777</span> lines <span style="color:rgb(98,98,98)">=</span> [<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_get_lines(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(98,98,98)">*</span>args, data<span style="color:rgb(98,98,98)">=</span>data, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs)]
+
+<span class="ansi-green-fg ansi-bold">   1778</span> <span style="font-weight:bold;color:rgb(0,135,0)">for</span> line <span style="font-weight:bold;color:rgb(175,0,255)">in</span> lines:
+
+<span class="ansi-green-fg ansi-bold">   1779</span>     <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>add_line(line)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:297</span>, in <span class="ansi-cyan-fg">_process_plot_var_args.__call__</span><span class="ansi-blue-fg">(self, axes, data, return_kwargs, *args, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    295</span>     this <span style="color:rgb(98,98,98)">+</span><span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">0</span>],
+
+<span class="ansi-green-fg ansi-bold">    296</span>     args <span style="color:rgb(98,98,98)">=</span> args[<span style="color:rgb(98,98,98)">1</span>:]
+
+<span class="ansi-green-fg">--&gt; 297</span> <span style="font-weight:bold;color:rgb(0,135,0)">yield from</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_plot_args</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">    298</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">this</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">ambiguous_fmt_datakey</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    299</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">return_kwargs</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">return_kwargs</span>
+
+<span class="ansi-green-fg ansi-bold">    300</span> <span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:546</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._plot_args</span><span class="ansi-blue-fg">(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)</span>
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+<span class="ansi-green-fg ansi-bold">    545</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg">--&gt; 546</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">0</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">for</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">l</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">in</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">]</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:539</span>, in <span class="ansi-cyan-fg">&lt;genexpr&gt;</span><span class="ansi-blue-fg">(.0)</span>
+
+<span class="ansi-green-fg ansi-bold">    534</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+
+<span class="ansi-green-fg ansi-bold">    535</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">ValueError</span>(
+
+<span class="ansi-green-fg ansi-bold">    536</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">label must be scalar or have the same length as the input </span><span style="color:rgb(175,0,0)">"</span>
+
+<span class="ansi-green-fg ansi-bold">    537</span>         <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">data, but found </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span><span style="color:rgb(0,135,0)">len</span>(label)<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> for </span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>n_datasets<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> datasets.</span><span style="color:rgb(175,0,0)">"</span>)
+
+<span class="ansi-green-fg">--&gt; 539</span> result <span style="color:rgb(98,98,98)">=</span> (<span class="ansi-yellow-bg">make_artist</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">axes</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncx</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">j</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">%</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">ncy</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">,</span>
+
+<span class="ansi-green-fg ansi-bold">    540</span> <span class="ansi-yellow-bg">                      </span><span class="ansi-yellow-bg">{</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">label</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">label</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    541</span>           <span style="font-weight:bold;color:rgb(0,135,0)">for</span> j, label <span style="font-weight:bold;color:rgb(175,0,255)">in</span> <span style="color:rgb(0,135,0)">enumerate</span>(labels))
+
+<span class="ansi-green-fg ansi-bold">    543</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> return_kwargs:
+
+<span class="ansi-green-fg ansi-bold">    544</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">list</span>(result)
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:338</span>, in <span class="ansi-cyan-fg">_process_plot_var_args._make_line</span><span class="ansi-blue-fg">(self, axes, x, y, kw, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    336</span> kw <span style="color:rgb(98,98,98)">=</span> {<span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kw, <span style="color:rgb(98,98,98)">*</span><span style="color:rgb(98,98,98)">*</span>kwargs}  <span style="font-style:italic;color:rgb(95,135,135)"># Don't modify the original kw.</span>
+
+<span class="ansi-green-fg ansi-bold">    337</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_setdefaults(<span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_getdefaults(kw), kw)
+
+<span class="ansi-green-fg">--&gt; 338</span> seg <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">mlines</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">Line2D</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">y</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">*</span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    339</span> <span style="font-weight:bold;color:rgb(0,135,0)">return</span> seg, kw
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/lines.py:421</span>, in <span class="ansi-cyan-fg">Line2D.__init__</span><span class="ansi-blue-fg">(self, xdata, ydata, linewidth, linestyle, color, gapcolor, marker, markersize, markeredgewidth, markeredgecolor, markerfacecolor, markerfacecoloralt, fillstyle, antialiased, dash_capstyle, solid_capstyle, dash_joinstyle, solid_joinstyle, pickradius, drawstyle, markevery, **kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">    417</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>set_markeredgewidth(markeredgewidth)
+
+<span class="ansi-green-fg ansi-bold">    419</span> <span style="font-style:italic;color:rgb(95,135,135)"># update kwargs before updating data to give the caller a</span>
+
+<span class="ansi-green-fg ansi-bold">    420</span> <span style="font-style:italic;color:rgb(95,135,135)"># chance to init axes (and hence unit support)</span>
+
+<span class="ansi-green-fg">--&gt; 421</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_internal_update</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-green-fg ansi-bold">    422</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>pickradius <span style="color:rgb(98,98,98)">=</span> pickradius
+
+<span class="ansi-green-fg ansi-bold">    423</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>ind_offset <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(98,98,98)">0</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1233</span>, in <span class="ansi-cyan-fg">Artist._internal_update</span><span class="ansi-blue-fg">(self, kwargs)</span>
+
+<span class="ansi-green-fg ansi-bold">   1226</span> <span style="font-weight:bold;color:rgb(0,135,0)">def</span><span style="color:rgb(188,188,188)"> </span><span style="color:rgb(0,0,255)">_internal_update</span>(<span style="color:rgb(0,135,0)">self</span>, kwargs):
+
+<span class="ansi-green-fg ansi-bold">   1227</span> <span style="color:rgb(188,188,188)">    </span><span style="font-style:italic;color:rgb(175,0,0)">"""</span>
+
+<span class="ansi-green-fg ansi-bold">   1228</span> <span style="font-style:italic;color:rgb(175,0,0)">    Update artist properties without prenormalizing them, but generating</span>
+
+<span class="ansi-green-fg ansi-bold">   1229</span> <span style="font-style:italic;color:rgb(175,0,0)">    errors as if calling `set`.</span>
+
+<span class="ansi-green-fg ansi-bold">   1230</span> 
+
+<span class="ansi-green-fg ansi-bold">   1231</span> <span style="font-style:italic;color:rgb(175,0,0)">    The lack of prenormalization is to maintain backcompatibility.</span>
+
+<span class="ansi-green-fg ansi-bold">   1232</span> <span style="font-style:italic;color:rgb(175,0,0)">    """</span>
+
+<span class="ansi-green-fg">-&gt; 1233</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_update_props</span><span class="ansi-yellow-bg">(</span>
+
+<span class="ansi-green-fg ansi-bold">   1234</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{cls.__name__}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">.set() got an unexpected keyword argument </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span>
+
+<span class="ansi-green-fg ansi-bold">   1235</span> <span class="ansi-yellow-bg">        </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="font-weight:bold;color:rgb(175,95,135)" class="ansi-yellow-bg">{prop_name!r}</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+
+
+
+File <span class="ansi-green-fg">~/Library/CloudStorage/Dropbox/07-sld/2025-09-07-ChatGPT와파이썬/.venv/lib/python3.14/site-packages/matplotlib/artist.py:1206</span>, in <span class="ansi-cyan-fg">Artist._update_props</span><span class="ansi-blue-fg">(self, props, errfmt)</span>
+
+<span class="ansi-green-fg ansi-bold">   1204</span>             func <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">getattr</span>(<span style="color:rgb(0,135,0)">self</span>, <span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">set_</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>k<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)">"</span>, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>)
+
+<span class="ansi-green-fg ansi-bold">   1205</span>             <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="color:rgb(0,135,0)">callable</span>(func):
+
+<span class="ansi-green-fg">-&gt; 1206</span>                 <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">AttributeError</span>(
+
+<span class="ansi-green-fg ansi-bold">   1207</span>                     errfmt<span style="color:rgb(98,98,98)">.</span>format(<span style="color:rgb(0,135,0)">cls</span><span style="color:rgb(98,98,98)">=</span><span style="color:rgb(0,135,0)">type</span>(<span style="color:rgb(0,135,0)">self</span>), prop_name<span style="color:rgb(98,98,98)">=</span>k),
+
+<span class="ansi-green-fg ansi-bold">   1208</span>                     name<span style="color:rgb(98,98,98)">=</span>k)
+
+<span class="ansi-green-fg ansi-bold">   1209</span>             ret<span style="color:rgb(98,98,98)">.</span>append(func(v))
+
+<span class="ansi-green-fg ansi-bold">   1210</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> ret:
+
+
+
+<span class="ansi-red-fg">AttributeError</span>: Line2D.set() got an unexpected keyword argument 'title'</pre>
+</div>
+</div>
+</div>
+<p><code>생각해볼점1</code> – 무엇이 더 편리한가?</p>
+<p><code>실습3</code> – 코랩에서 <code>toggle gemini</code>를 활용하여 scatter plot을 하나 그려라.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="hands-on_files/figure-revealjs/3c1210a4-1-image.png"></p>
+<figcaption>-</figcaption>
+</figure>
+</div>
+<blockquote>
+<p>가능하면 의미있는 예제를 그려보도록 하자. 예를들면 온도와 아이스아메리카노 판매량과 같은</p>
+</blockquote>
+<p><code>실습4</code> – 실습3에서 만든 예제를 설명하는 문서를 만들어 보도록 하자.</p>
+<p><code>실습5</code> – 머신러닝 모형을 이용하여 산점도에 적당한 추세선을 추가해보도록 하자.</p>
+<p><code>실습6</code> – 머신러닝 모형을이용하여 간단한 예측을 해보도록 하자.</p>
+<p><code>실습7</code> – 모형과 코드를 설명하는 문서를 작성해보자.</p>
+<p><code>생각해볼점2</code> – 커서는 모델에 대한 기여는 없다. 그래도 커서는 유용한가? 커서가 혁신이라고 생각하는가?</p>
+<p><code>생각해볼점3</code> – 커서에 얼만큼의 돈을 지불할 수 있을까? (ChatGTP보다 더 지불할 의향이 있는가?)</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=-PN3xY7ZeMA" class="uri">https://www.youtube.com/watch?v=-PN3xY7ZeMA</a></li>
+</ul>
+<h3 id="실습주제5-클로드의-반격1-아키팩트-바이브코딩">실습주제5 – 클로드의 반격1 (아키팩트) / 바이브코딩</h3>
+<p><code>실습1</code> – 클로드에 접속하고 강의노트를 업로드하여 5개의 OX퀴즈를 만들자.</p>
+<p><code>실습2</code> – 실습1에서 만든 OX퀴즈를 플래시카드앱으로 만들자.</p>
+<p><code>실습3</code> – 만든 앱을 배포하자.</p>
+<p><code>실습4</code> – 랜덤으로 문제를 섞는 기능을 추가해보자.</p>
+<p><code>실습5</code> – 툴팁기능을 추가해보자.</p>
+<p><code>실습6</code> – 문제 히스토리 기능을 추가해보자.</p>
+<h3 id="실습주제6-클로드의-반격2-mcp">실습주제6 – 클로드의 반격2 (MCP)</h3>
+<blockquote>
+<p>이건 돈을 내야해서요.. 실습하긴 어렵습니다.</p>
+</blockquote>
+<h3 id="실습주제7-클로드의-반격3-클로드코드">실습주제7 – 클로드의 반격3 (클로드코드)</h3>
+<p><code>실습1</code> – 파이썬을 이용해 아래의 주소에 접속하여 자료를 가져오고 압축을 풀어라. (설마 안배워서 모른다고 하진 않겠죠?)</p>
+<ul>
+<li><a href="https://github.com/guebin/rda251022/blob/main/Downloads.zip" class="uri">https://github.com/guebin/rda251022/blob/main/Downloads.zip</a></li>
+</ul>
+<p><code>실습2</code> – 제미나이cli에 접속하라.</p>
+<p><code>실습3</code> – Downloads폴더의 내용을 파악하라.</p>
+<p><code>실습4</code> – AI.txt를 찾고 문항과 정답을 각각 파일별로 분리하는 파이썬 코드를 작성하라.</p>
+<p><code>실습5</code> – 제미나이cli를 이용하여 이미지 파일들의 이름을 바꿔라.</p>
+<ul>
+<li>이미지파일크기를 조사</li>
+<li>이미지파일의 생성날짜를 조사</li>
+<li>위의 정보를 혼합하여 적절한 네이밍 규칙에 따라 이름을 바꾸라</li>
+</ul>
+<p><code>실습6</code> – 폴더 <code>image</code>를 별도로 만들고, 모든 이미지 파일을 그 폴더에 복사하는 파이썬 코드를 작성하라.</p>
+<p><code>실습7</code> – 22명의 학생들에 대한 출석점수, 중간고사점수, 기말고사 점수가 저장되어있는 파일을 파악하라. 그것을 바탕으로 모든 학생들의 점수를 정리한 엑셀파일 <code>scores.csv</code>를 만들어라.</p>
+<p><code>실습8</code> – 출석 20%, 중간고사 30%, 기말고사 50% 의 가중치를 반영하여 최종스코어를 계산하라.</p>
+<h3 id="실습주제8-구글의-반격-노트북lm">실습주제8 – 구글의 반격 (노트북LM)</h3>
 
 
 </section>
